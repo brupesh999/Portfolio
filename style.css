@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Didot');
+
+h1 {
+    font-family: Didot;
+    font-style: oblique;
+    font-weight: 900;
+    text-align: center;
+    font-size: 70px;
+    background-color: fuchsia;
+}
+
+#headerLinks {
+    text-align: center;
+    font-family: Montserrat;
+    background-color: indigo;
+}
+
+p {
+    font-family: Montserrat;
+}

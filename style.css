@@ -2,35 +2,35 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair_Display');
 @import "effects/border-transitions/underline-from-center";
 
-
-@keyframes marquee {
-    0% {
-        margin-left: 100%;
-    }
-
-    40% {
-        margin-left: 0;
-    }
-
-    100% {
-        margin-left: -200%;
-    }
-}
-
 @keyframes headerBackgroundShift {
   0% {background-color: rgb(15, 0, 49);}
-  50% {background-color: rgb(27, 2, 51);}
+  50% {background-color: rgb(76, 12, 136);}
   100% {background-color: rgb(15, 0, 49);}
 }
 
+@keyframes fontGrowHeader {
+  0% {font-size: 130px;}
+  /*50% {font-size: 140px;}*/
+  100% {font-size: 140px;}
+}
+
+@keyframes fontShrinkHeader {
+  0% {font-size: 140px;}
+  /*50% {font-size: 140px;}*/
+  100% {font-size: 130px;}
+}
+
 body {
-    background-color: rgb(9, 1, 27);
+    background: url("neon-bg-temp.jpg") center;
+    background-size: cover;
+    background-attachment: fixed;
     color: rgb(244, 239, 255);
-    font-family: Montserrat;
+    font-family: Avenir Next;
+    margin: 0px 0px 0px 0px;
 }
 
 p {
-    font-family: Montserrat;
+    font-family: Avenir Next;
 }
 
 .parentTable {
@@ -39,45 +39,71 @@ p {
     margin: 0px 0px 0px 0px;
     width: 100vw;
     height: 400px;
+    line-height: normal;
 }
 
 #childBanner {
-    font-family: Playfair Display;
+    font-family: Didot;
     font-style: italic;
     text-align: center;
-    font-size: 100px;
-    font-weight: lighter;
-    background-color: rgb(15, 0, 49);
+    font-size: 130px;
+    font-weight: 500;
+    background-color: rgba(15, 0, 49, 0);
     color: rgb(239, 236, 255);
     display: table-cell;
+    line-height: normal;
     vertical-align: middle;
 }
 
-/*#childBanner:hover {
-    animation: headerBackgroundShift 3s ease-in-out;
-}*/
-
+.parentTableNav {
+    display: table;
+    padding: 5px 5px 0px 0px;
+    margin: 5px 5px 0px 5px;
+    width: 100vw;
+    height: 50px;
+    line-height: normal;
+}
 
 #headerLinks {
-    display: block;
+    display: table-cell;
+    font-size: 20px;
     height: 50px;
     line-height: 50px;
-    padding: 0px;
-    margin: 0px;
     text-align: center;
     font-family: Montserrat;
-    background-color: rgb(27, 2, 51);
+    background-color: rgba(27, 2, 51, 0.75);
 }
 
+#headerLinks a {text-decoration: none; }
 #headerLinks a:link {color: white; }
 #headerLinks a:visited {color: white; }
-#headerLinks a:hover {color: plum; }
-#headerLinks hr {
-    margin: 0px; 
-    padding: 0px;
-    border-style: double;
+#headerLinks a:hover {color: #b89bf0; }
 
+.parentTableBody {
+    display: table;
+    padding: 0px 5px 5px 0px;
+    margin: 0px 5px 5px 5px;
+    line-height: normal;
+    height: auto;
+    width: 100vw;
 }
+
+#bodyTableCell1 {
+    display: table-cell;
+    height: auto;
+    background-color: rgba(9, 1, 27, 0.8);
+}
+
+/*.hvr-font-grow:hover,
+.hvr-font-grow:focus,
+.hvr-font-grow:active {
+    animation: fontGrowHeader 3s ease-in-out forwards;
+}*/
+
+/*#childBanner:hover {
+    animation: headerBackgroundShift 3s ease-in-out forwards;
+    animation: fontGrowHeader 3s ease-in-out forwards;
+}*/
 
 .hvr-grow {
     display: inline-block;

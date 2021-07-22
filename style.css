@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url('https://fonts.googleapis.com/css?family=Playfair_Display');
-@import "effects/border-transitions/underline-from-center";
 
 @keyframes headerBackgroundShift {
   0% {background-color: rgb(15, 0, 49);}
@@ -57,8 +55,9 @@ p {
 
 .parentTableNav {
     display: table;
-    padding: 5px 5px 0px 0px;
-    margin: 5px 5px 0px 5px;
+    position: sticky;
+    top: 0;
+    margin: 0px;
     width: 100vw;
     height: 50px;
     line-height: normal;
@@ -68,10 +67,13 @@ p {
     display: table-cell;
     font-size: 20px;
     height: 50px;
+    padding: 10px;
     line-height: 50px;
     text-align: center;
     font-family: Montserrat;
     background-color: rgba(27, 2, 51, 0.75);
+    background: linear-gradient(180deg, rgba(27, 2, 51, 1) 0%, rgba(27, 2, 51, 0.95) 50%, rgba(27, 2, 51, 0.75) 100%);
+    vertical-align: middle;
 }
 
 #headerLinks a {text-decoration: none; }
@@ -81,17 +83,18 @@ p {
 
 .parentTableBody {
     display: table;
-    padding: 0px 5px 5px 0px;
-    margin: 0px 5px 5px 5px;
+    margin: 0px;
     line-height: normal;
     height: auto;
     width: 100vw;
 }
 
 #bodyTableCell1 {
+    padding: 20px 20px 20px 20px;
     display: table-cell;
     height: auto;
     background-color: rgba(9, 1, 27, 0.8);
+    vertical-align: middle;
 }
 
 /*.hvr-font-grow:hover,

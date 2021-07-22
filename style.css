@@ -20,8 +20,9 @@
 
 body {
     background: url("neon-bg-temp.jpg") center;
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
+    background-position: top;
     color: rgb(244, 239, 255);
     font-family: Avenir Next;
     margin: 0px 0px 0px 0px;
@@ -72,7 +73,7 @@ p {
     text-align: center;
     font-family: Montserrat;
     background-color: rgba(27, 2, 51, 0.75);
-    background: linear-gradient(180deg, rgba(27, 2, 51, 1) 0%, rgba(27, 2, 51, 0.95) 50%, rgba(27, 2, 51, 0.75) 100%);
+    background: linear-gradient(180deg, rgba(27, 2, 51, 1) 0%, rgba(27, 2, 51, 0.95) 50%, rgba(27, 2, 51, 0.8) 100%);
     vertical-align: middle;
 }
 

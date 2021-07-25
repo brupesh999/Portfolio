@@ -1,21 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&effect=anaglyph|3d-float');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
-@keyframes headerBackgroundShift {
-  0% {background-color: rgb(15, 0, 49);}
-  50% {background-color: rgb(76, 12, 136);}
-  100% {background-color: rgb(15, 0, 49);}
-}
-
-@keyframes fontGrowHeader {
-  0% {font-size: 130px;}
-  /*50% {font-size: 140px;}*/
-  100% {font-size: 140px;}
-}
-
-@keyframes fontShrinkHeader {
-  0% {font-size: 140px;}
-  /*50% {font-size: 140px;}*/
-  100% {font-size: 130px;}
+@font-face {
+  font-family: Polya;
+  src: url(POLYA.otf);
 }
 
 body {
@@ -24,12 +13,25 @@ body {
     background-attachment: fixed;
     background-position: top;
     color: rgb(244, 239, 255);
-    font-family: Avenir Next;
+    font-family: "Avenir", "Nunito", sans-serif;
+    font-variant: ;
     margin: 0px 0px 0px 0px;
 }
 
 p {
-    font-family: Avenir Next;
+    font-family: "Avenir", "Nunito", sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+h1, h2 {
+    font-family: "Polya", "Montserrat", "Avenir", "Nunito", sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+h3 {
+    font-family: "Montserrat", "Avenir", "Nunito", sans-serif;
 }
 
 .parentTable {
@@ -37,12 +39,39 @@ p {
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
     width: 100vw;
-    height: 400px;
+    height: 600px;
     line-height: normal;
+    position: relative;
+    align-self: center;
+}
+
+.parentTableLess {
+    display: table;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    width: 100vw;
+    height: 200px;
+    line-height: normal;
+    position: relative;
+    align-self: center;
 }
 
 #childBanner {
-    font-family: Didot;
+    font-family: "Didot", "Georgia", serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 160px;
+    font-weight: 500;
+    background-color: rgba(15, 0, 49, 0);
+    color: rgb(239, 236, 255);
+    display: table-cell;
+    line-height: normal;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+#childBannerLess {
+    font-family: "Didot", "Georgia", serif;
     font-style: italic;
     text-align: center;
     font-size: 130px;
@@ -52,6 +81,7 @@ p {
     display: table-cell;
     line-height: normal;
     vertical-align: middle;
+    white-space: nowrap;
 }
 
 .parentTableNav {
@@ -71,16 +101,18 @@ p {
     padding: 10px;
     line-height: 50px;
     text-align: center;
-    font-family: Montserrat;
+    font-family: "Avenir Next", "Avenir", "Montserrat", "Nunito", sans-serif;
+    font-stretch: expanded;
+    font-weight: lighter;
     background-color: rgba(27, 2, 51, 0.75);
-    background: linear-gradient(180deg, rgba(27, 2, 51, 1) 0%, rgba(27, 2, 51, 0.95) 50%, rgba(27, 2, 51, 0.8) 100%);
+    background: linear-gradient(180deg, rgba(27, 2, 51, 1) 0%, rgba(27, 2, 51, 0.8) 100%);
     vertical-align: middle;
 }
 
 #headerLinks a {text-decoration: none; }
 #headerLinks a:link {color: white; }
 #headerLinks a:visited {color: white; }
-#headerLinks a:hover {color: #b89bf0; }
+#headerLinks a:hover {color: #dfcdff; }
 
 .parentTableBody {
     display: table;
@@ -96,6 +128,32 @@ p {
     height: auto;
     background-color: rgba(9, 1, 27, 0.8);
     vertical-align: middle;
+}
+
+#musicCard {
+    font-size: 10px; 
+    color: #7348ba;
+    line-break: anywhere;
+    word-break: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: "Montserrat", "Nunito",sans-serif;
+    font-weight: 100;
+}
+
+#musicCardLink {
+    color: #ae81f8;
+    text-decoration: none;
+}
+
+#song-name {
+    text-decoration: none;
+    color: #f3ccff;
+}
+
+#song-name:hover {
+    color: #d5a8ff;
 }
 
 /*.hvr-font-grow:hover,
@@ -163,4 +221,10 @@ img {
   margin-right: auto;
   margin-top: 2%;
   margin-bottom: 2%;
+}
+
+.material-icons.md-140 {
+    font-size: 140px;
+    vertical-align: -14px;
+    color: rgb(241, 233, 255);
 }
